@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Open Weather Map API</title>
+   <link href="/static/css/style.css" rel="stylesheet"/>
+</head>
+<body>
+
+<div class="info">
+   <fieldset >
+       <legend><h2>Weather on London city using Open Weather Map API</h2></legend>
+       <p><strong>location:</strong> {{data.name}}, {{data.sys['country']}}.</p>
+       <p><strong>Weather description:</strong> {{data.weather[0].description}}.</p>
+       <p><strong>Temperature:</strong> {{data.main['temp']}}. Min({{data.main['temp_min']}}), Max({{data.main['temp_max']}})</p>
+       <p><strong>Sunrise:</strong> {{data.sys['sunrise']}}.</p>
+       <p><strong>Sunset:</strong> {{data.sys['sunset']}}.</p>
+
+  </fieldset>
+</div>
+</body>
+</html>
